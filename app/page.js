@@ -7,6 +7,7 @@ import About from "./components/about/about";
 import FeedBack from "./components/feedback/feedback";
 import Gallery from "./components/gallery/gallery";
 import Footer from "./components/footer/footer";
+import FooterContact from "./components/footer/footerContact";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       <FeedBack />
       <Gallery />
       <Footer />
+      <FooterContact />
     </main>
   );
 }
