@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import HeroImage from "../public/hero.jpg";
+import Header from "./components/header/header";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           priority
           className={styles.heroImage}
         />
+        <Header />
         <div>
           <h1 className={styles.headingTitle}>
             Make your comfort is our happiness

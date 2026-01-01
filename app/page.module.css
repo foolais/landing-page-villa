@@ -18,11 +18,24 @@
   -o-transform: scaleX(-1);
 }
 
+.header {
+  position: absolute;
+  z-index: 4;
+  top: 5%;
+  left: 10%;
+}
+
+.menuIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
 .headingTitle {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 30%;
-  left: 10%;
+  left: 15%;
   line-height: 60px;
   color: white;
   font-size: 40px;
