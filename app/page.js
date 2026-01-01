@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import HeroImage from "../public/hero.jpg";
 import Header from "./components/header/header";
 import CTA from "./components/cta/cta";
+import About from "./components/about/about";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
           <CTA />
         </div>
       </div>
+      <About />
     </main>
   );
 }
