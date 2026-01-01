@@ -6,6 +6,7 @@ import CTA from "./components/cta/cta";
 import About from "./components/about/about";
 import FeedBack from "./components/feedback/feedback";
 import Gallery from "./components/gallery/gallery";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
       <About />
       <FeedBack />
       <Gallery />
+      <Footer />
     </main>
   );
 }
