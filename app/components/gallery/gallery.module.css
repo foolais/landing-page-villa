@@ -32,6 +32,7 @@
   display: flex;
   gap: 2rem;
   margin-top: 40px;
+  justify-content: center;
 }
 
 .galleryWrapper > div:last-child {
