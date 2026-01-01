@@ -1,0 +1,124 @@
+.wrapper {
+  position: relative;
+  min-height: 700px;
+}
+
+.backdrop {
+  position: absolute;
+  bottom: -10%;
+  background-color: #f1f6f6;
+  width: 55vw;
+  height: 474px;
+}
+
+.contentWrapper {
+  position: relative;
+  padding: 100px 10% 0 10%;
+  overflow: hidden;
+}
+
+.contentWrapper > h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -2.3%;
+  font-weight: 600;
+}
+
+.contentWrapper > h2 > span {
+  color: var(--primary);
+}
+
+.galleryWrapper {
+  display: flex;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.galleryWrapper > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leftImages {
+  position: relative;
+  width: 564px;
+  height: 515px;
+}
+.leftImages img {
+  object-fit: cover;
+}
+
+.rightImages {
+  position: relative;
+  width: 564px;
+  height: 248px;
+}
+.rightImages img {
+  object-fit: cover;
+}
+
+.rightImages > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -2, 1%;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    min-height: max-content;
+  }
+  .backdrop {
+    display: none;
+  }
+  .contentWrapper {
+    padding: 50px 10% 0 10%;
+  }
+  .contentWrapper > h2 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1.1%;
+  }
+  .galleryWrapper {
+    margin-top: 20px;
+  }
+  .leftImages {
+    width: 193px;
+    height: 162px;
+  }
+  .leftImages img {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+
+  .rightImages {
+    width: 126px;
+    height: 77px;
+  }
+  .rightImages img {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+
+  .rightImages > span {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
