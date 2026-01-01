@@ -59,7 +59,7 @@ const About = () => {
             Various <span>facilities</span> that you can enjoy
           </h2>
           <p>We bring you together with your dream holiday</p>
-          <div className={styles.facilitiesButton}>Explore</div>
+          <div className={styles.facilitiesButtonDesktop}>Explore</div>
         </div>
         <div>
           <div className={styles.facilityImageWrapper}>
@@ -69,6 +69,7 @@ const About = () => {
             <Image src={Facilities2} alt="facilities2" fill />
           </div>
         </div>
+        <div className={styles.facilitiesButtonMobile}>Explore</div>
       </div>
     </div>
   );

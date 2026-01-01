@@ -59,3 +59,28 @@
 .cardPrice span {
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+  .cardVillaStudio {
+    padding: 5px;
+  }
+  .imageContainer {
+    width: 136px;
+    height: 154px;
+  }
+  .cardVillaStudio h3 {
+    font-weight: 400;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  .cardContent {
+    display: none;
+  }
+  .cardPrice {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .cardPrice span {
+    display: none;
+  }
+}
