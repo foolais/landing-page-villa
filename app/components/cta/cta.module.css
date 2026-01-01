@@ -1,0 +1,67 @@
+.ctaWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.cta div {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+}
+
+.ctaDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.flexIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ctaButton {
+  background-color: var(--primary);
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .ctaWrapper {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+  .ctaWrapper > div:first-child {
+    justify-content: space-between !important;
+    width: 100%;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .ctaWrapper > div:nth-child(2) {
+    width: 100%;
+    padding: 0 32px 16px 32px;
+  }
+  .ctaButton {
+    width: 100%;
+    padding: 12px 0;
+  }
+}

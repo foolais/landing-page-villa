@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import HeroImage from "../public/hero.jpg";
 import Header from "./components/header/header";
+import CTA from "./components/cta/cta";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
           </p>
           <div className={styles.headingMainButton}>Book Now</div>
           <div className={styles.headingSecondaryButton}>Explore Rooms</div>
+        </div>
+        <div className={styles.cta}>
+          <CTA />
         </div>
       </div>
     </main>
