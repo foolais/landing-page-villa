@@ -1,0 +1,70 @@
+.feedBackWrapper {
+  position: relative;
+  padding: 100px 10% 0 10%;
+  max-width: 100vw !important;
+  overflow: hidden;
+}
+
+.feedBackWrapper > div:first-child {
+  position: relative;
+  width: max-content;
+}
+
+.feedBackWrapper > div:first-child > div {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #cfe1e04d;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.feedBackWrapper h2 {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.023em;
+  font-weight: 600;
+  width: 400px;
+}
+
+.feedBackWrapper h2 span {
+  color: var(--primary);
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .feedBackWrapper {
+    padding: 20px 10%;
+  }
+  .feedBackWrapper > div:first-child > div {
+    display: none;
+  }
+  .feedBackWrapper h2 {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1.1%;
+    width: 200px;
+  }
+}

@@ -4,6 +4,7 @@ import HeroImage from "../public/hero.jpg";
 import Header from "./components/header/header";
 import CTA from "./components/cta/cta";
 import About from "./components/about/about";
+import FeedBack from "./components/feedback/feedback";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         </div>
       </div>
       <About />
+      <FeedBack />
     </main>
   );
 }
