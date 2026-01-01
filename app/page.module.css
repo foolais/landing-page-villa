@@ -31,11 +31,14 @@
   cursor: pointer;
 }
 
-.headingTitle {
+.headingWrapper {
   position: absolute;
   z-index: 1;
   top: 30%;
-  left: 15%;
+  left: 10%;
+}
+
+.headingTitle {
   line-height: 60px;
   color: white;
   font-size: 40px;
@@ -44,22 +47,76 @@
   letter-spacing: -0.023em;
 }
 
+.headingSubtitle {
+  color: white;
+  font-size: 20px;
+  max-width: 649px;
+  line-height: 20px;
+  letter-spacing: -0.012em;
+  margin: 20px 0;
+}
+
+.headingMainButton {
+  display: none;
+}
+
+.headingSecondaryButton {
+  background-color: #f1f6f6;
+  color: var(--primary);
+  max-width: max-content;
+  font-size: 20px;
+  padding: 12px 35px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 @media (max-width: 375px) {
   .heroWrapper {
     height: 433px;
+  }
+  .headingWrapper {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .headingTitle {
     font-size: 20px;
     line-height: 28px;
     letter-spacing: -0.012em;
+    margin: auto;
     text-align: center;
     width: 212px;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+  }
+  .headingSubtitle {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 335px;
+    margin: 10px 0;
+  }
+  .headingMainButton {
+    background-color: var(--primary);
+    color: white;
+    display: block;
+    font-size: 12px;
+    padding: 12px 35px;
+    margin: auto;
+    max-width: 190px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  .headingSecondaryButton {
+    font-size: 12px;
+    max-width: 190px;
+    margin: auto;
   }
 }
